@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+
+}
+
+
+p{
+    font-size: 16px;
+}
+
+h1{
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px lightblue;
+}
+.pHeader{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 20px;
+    border: 1px lightblue solid;
+}
