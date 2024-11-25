@@ -1,0 +1,29 @@
+/* Las variables en CSS son lugares donde voy a guardar informacion */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --color-principal: blue;
+    --color-secundario: green;
+}
+
+div{
+    background-color: whitesmoke;
+}
+
+.P-1{
+    color: var(--color-principal);
+}
+.P-2{
+    color: blueviolet;
+}
+.P-3{
+    color:var(--color-secundario);
+}
+.P-4{
+    color:black;
+}

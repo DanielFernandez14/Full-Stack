@@ -1,0 +1,86 @@
+/* Reset CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--rojo);
+}
+
+:root {
+    --verde: #50C878;
+    --rojo: #FF6F61
+}
+
+body{
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    padding: 20px;
+}
+
+h1{
+    color: var(--verde);
+}
+
+header{
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+
+/* Selector especifico */
+header ul{
+    font-weight: 900;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+main{
+    background-color: bisque;
+    padding: 20px;
+}
+
+.gato{
+    background-color: aquamarine;
+    padding: 20px;
+}
+.gato h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.gato h4{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.perro{
+    background-color: aqua;
+    padding: 20px;
+}
+
+.perro h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.perro h4{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: blue;
+    padding: 20px;
+
+}
+footer ul{
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 10px;
+}

@@ -1,0 +1,51 @@
+/*---------- CSS ----------*/
+/*---------- Cascading Styles Sheet ----------*/
+/* Cómo voy a mostrar el contenido estructurado semanticamente con el HTML */
+/* Los elementos ya traen estilos, tipografia, color, tamaño de letras, alineacion izq, margin */
+
+/* p es un Selector
+
+    color, font-family, background-color, etc... son propiedades
+*/
+/* el " * " es universal para todos y se les aplica a los demas*/
+/* El Margin es el espacio que separa los elementos de otros
+    El Padding es el espacio que tienen por dentro hasta el Border */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.parrafoSeleccionado{
+    color:green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightcoral;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black;
+}
+body{
+    background-color: wheat;
+}
+.pConPadding{
+    padding: 100px;
+    text-align: center;
+}
+#pConId{
+    color: green;
+    background-color: lightblue;
+    text-align: center;
+    
+}
