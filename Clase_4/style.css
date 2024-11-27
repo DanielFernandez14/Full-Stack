@@ -1,0 +1,51 @@
+/* Selector-> la herramienta que tiene el CSS para seleccionar el elemento que quiero modificar del HTML | Propiedad | Valor */
+
+/* Selectores -> de Etiqueta, Clase o Id */ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aquamarine;
+    padding: 20px;
+}
+.mainPage{
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+ul{
+    list-style: none;
+    background-color: burlywood;
+    text-align: center;
+
+}
+
+
+h1{
+    aspect-ratio: 6/1;
+    background-color: rgb(63, 144, 199);
+    color: blueviolet;
+    text-shadow: 1px 1px rgb(120, 153, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer span{
+    color: blueviolet;
+}
+
