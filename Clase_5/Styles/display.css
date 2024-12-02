@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pruebaOne{
+    background-color: yellowgreen;
+}
+
+a{
+    background-color: lightblue;
+    display: block; /* aca lo cambiamos de inline a block */
+    margin: 20px 0;
+}
+
+.container{
+    background-color: aquamarine;
+    padding: 20px;
+    display: flex; /* hacemos que se modifique y quede para modificar los ejes, Justify Content Eje X || align Items eje Y*/
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* separacion entre los elementos */
+
+}
+.pdeCont{
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+
+
+

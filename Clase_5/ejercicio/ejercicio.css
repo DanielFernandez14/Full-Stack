@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px 0px;
+}
+
+.container h3{
+    margin-bottom: 10px;
+}
+.container ul{
+    list-style: none;
+}
+.container li{
+    background-color: tan;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+.container li div{
+    background-color: thistle;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* PseudoClases 
+.option-reaction div:first-child{
+    color: red;
+} */
+
+.option-reaction{
+    background-color: rgb(238, 230, rgb(241, 98, 98));
+}
+
+.reaction-title{
+    color: red;
+}
+.brain-title{
+    color: yellow;
+}
+.verbal-title{
+    color: green;
+}
+.verbal-visual{
+    color: blueviolet;
+}
+
+.container button{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container button:hover{
+    opacity: 0.8;
+}
+
