@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* viewport height alto de la pantalla */
+    background-color: rgb(214, 205, 234);
+}
+
+article{
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden; 
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    -- para que quede con los border redondeados, es lo mismo que poner el overflow hidden
+    */
+}
+
+.cont-content{
+    padding: 20px;
+    margin-top: -5px;
+    background-color: rgba(245, 245, 220, 0.153);
+}
+
+h3{
+    font-weight: 900; /* si no se aplica mas negrito es que es el maximo de la tipografia */
+    padding: 10px;
+}
+p{
+    font-size: 14px;
+    color: grey;
+    ;
+}
+
+.cont-plan {
+    background-color: rgba(255, 192, 203, 0.214);
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-large{
+    padding-bottom: 10px;
+}
+
+.cont-desc-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+.cont-desc-plan i{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(192, 188, 200, 0.586);
+}
+
+.cont-content a {
+    font-size: 12px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    
+}
+
+.btn-payment {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0.597);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    scale: 1.03;
+}
+.btn-cancel {
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: 600;
+}
+
+
