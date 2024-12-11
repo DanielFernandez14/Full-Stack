@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-1{
+    background-color: violet;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid black 10px;
+    background-image: url(https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg);
+    color: white;
+}
+.section-2{
+    background-color: tomato;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

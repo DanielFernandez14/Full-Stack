@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    padding: 20px;
+}
+
+section{
+    background-color: yellowgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+.promos-lista{
+    margin-bottom: 20px;
+}
+
+article{
+    background-color: slateblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+article div{
+    background-color: teal;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cont-frutas{
+    width: 30%; /* 30% del cont padre */
+}
+
+.cont-verduras{
+    width: 70%;
+}
+
+.cont-grid-verduras{
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Media queries */
+/* Un punto de quiebre es decirle a la pc que en cierto ancho aplique ciertos cambios */
+/* Si mi pagina esta en un pc, el fondo debe ser verde */
+/* Si mi pagina esta en un pc, el fondo debe ser rojo */
+
+/* 1440px pc | 880px tablet | 480 celulares */
+
+@media (max-width: 480px) {
+    section{
+        background-color: red;
+        overflow: hidden;
+    }
+    article{
+        overflow: hidden;
+    }
+    h1{
+        color: white;
+    }
+    .cont-frutas{
+        width: initial;
+        margin-bottom: 10px;
+        overflow: hidden;
+        
+    }
+    .cont-verduras{
+        width: initial;
+        overflow: hidden;
+        display: block;
+        
+
+    }
+    .cont-grid-verduras{
+        display: block;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
