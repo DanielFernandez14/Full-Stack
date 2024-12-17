@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+img{
+
+    transform: rotate();
+    animation: pelota 3s ease-in-out infinite;
+}
+
+@keyframes pelota {
+    from {
+        transform: rotate(0deg);
+    }
+    to{transform: rotate(360deg);
+    }
+}

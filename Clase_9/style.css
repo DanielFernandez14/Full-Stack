@@ -1,0 +1,177 @@
+/* .video{
+    background-image: url("https://procolombia.thebravecontent.com/resources/procolombia1/img/pattern-video.png");
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+video{
+    width: 80%;
+    margin: auto;    
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+}
+
+img{
+
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 120px;
+    /* transform: scaleX(1.1) rotate(10deg) skew(38deg); */
+    transition: all 0.5s;
+}
+img:hover{
+    background-color: aquamarine;
+    transform: scale(1.4);
+}
+
+
+.boton{
+    padding: 200px;
+    height: 200px;
+    font-size: large;
+    transition: all 0.3s;
+}
+.boton:hover{
+    transform: scale(1.1);
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* -----------------------Transform----------------------- */
+
+/* En CSS, la propiedad transform se utiliza para aplicar una transformación visual a un elemento, como rotación, escalado, traslación o sesgado. Permite modificar la posición, el tamaño o la forma de un elemento de manera dinámica.
+
+1. Traslación (translate)
+Mueve un elemento de su posición original a lo largo del eje X, Y o Z.
+
+2. Escalado (scale)
+Cambia el tamaño de un elemento en los ejes X, Y o Z.
+
+Sintaxis: transform: scale(x, y); 
+
+3. Rotación (rotate)
+Rota un elemento alrededor de un punto de referencia.
+
+Sintaxis: transform: rotate(angle);
+
+4. Sesgado (skew)
+Aplica una transformación de sesgado a un elemento, inclinando sus bordes.
+
+Sintaxis: transform: skew(x-angle, y-angle);
+
+6. Transformaciones en 3D (translate3d, rotate3d, scale3d)
+Además de las transformaciones 2D, se pueden aplicar transformaciones en el espacio tridimensional.
+
+7. Transform Origin
+Puedes especificar el punto de origen de la transformación usando transform-origin. Esto define el punto alrededor del cual se realizan las transformaciones (por defecto es el centro).
+
+Sintaxis: transform-origin: x y;
+
+
+Unidades: Las transformaciones como translate y scale utilizan unidades como px, %, o em, mientras que para rotate, los valores suelen ser ángulos (como deg, rad, etc.).
+Desempeño: Las transformaciones son generalmente más eficientes en términos de rendimiento que cambiar propiedades como top, left, width o height, ya que no requieren el recalculo de disposición del documento.
+*/
+
+
+/* -----------------------Transform----------------------- */
+
+
+
+
+
+/* -----------------------Transition----------------------- */
+
+/* 
+En CSS, las transiciones permiten cambiar suavemente de un estilo a otro cuando se produce un evento, como un hover, focus, o click. Son útiles para agregar efectos visuales a la interacción del usuario. A continuación te explico cómo funcionan las transiciones y te doy ejemplos.
+
+--Propiedad transition
+La propiedad transition tiene 4 componentes principales:
+
+transition-property: Especifica qué propiedad o propiedades cambiarán durante la transición.
+transition-duration: Define cuánto tiempo durará la transición.
+transition-timing-function: Controla la velocidad de la transición durante su duración (como aceleración o desaceleración).
+transition-delay: Especifica el tiempo que debe esperar la transición antes de iniciarse.
+
+--Las funciones de temporización controlan cómo se realiza el cambio a lo largo del tiempo. Los valores más comunes son:
+
+ease: Acelera al principio y desacelera al final.
+linear: El cambio es constante durante toda la duración.
+ease-in: La transición empieza lentamente y luego se acelera.
+ease-out: La transición comienza rápidamente y luego se desacelera.
+ease-in-out: La transición comienza y termina lentamente, pero es rápida en el medio.
+
+
+
+
+
+
+*/
+
+/* -----------------------Transition----------------------- */
+
+
+/* -----------------------Animation----------------------- */
+
+
+/* 
+En CSS, la propiedad animation permite crear animaciones complejas, mucho más poderosas y personalizables que las transiciones. Las animaciones CSS consisten en una secuencia de cambios de estilo que ocurren a lo largo del tiempo. A diferencia de las transiciones, las animaciones pueden repetirse, ir hacia adelante y hacia atrás, y ser controladas con más precisión.
+
+Propiedad animation
+La propiedad animation en CSS permite definir las animaciones de un elemento, y tiene la siguiente sintaxis:
+
+element {
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+}
+
+Componentes de la propiedad animation:
+name: Es el nombre de la animación, que se refiere a la regla @keyframes que definirá cómo cambia el estilo del elemento durante la animación.
+duration: La duración de la animación (el tiempo total que tarda en completarse).
+timing-function: Controla la aceleración y desaceleración durante la animación.
+delay: El tiempo de espera antes de que la animación comience.
+iteration-count: Número de veces que la animación debe repetirse. Puede ser un número entero o infinite para que la animación se repita indefinidamente.
+direction: Define si la animación va hacia adelante (normal), en reversa (reverse), o alternando entre ambas direcciones (alternate).
+fill-mode: Define el estilo que mantiene el elemento antes o después de la animación. Puede ser forwards, backwards, o both.
+play-state: Controla si la animación está en curso (running) o pausada (paused).
+
+
+
+
+
+
+*/
+
+
+
+/* -----------------------Animation----------------------- */
