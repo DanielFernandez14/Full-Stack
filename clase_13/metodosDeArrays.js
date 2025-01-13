@@ -19,3 +19,6 @@ console.log(frutas)
 // shift -> elimina el primer elemento de un array
 frutas.shift()
 console.log(frutas)
+
+//splice -> elimina un elemento X de un Array
+frutas.splice()

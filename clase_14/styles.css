@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button{
+    display: block;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: yellowgreen;
+}
+button:hover{
+
+}
