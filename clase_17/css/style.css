@@ -70,7 +70,6 @@ a{
 .degradado{
     color: transparent;
     background: linear-gradient(to right, var(---colorPrimary) 0%, var(---colorSecundary) 100%);
-    -webkit-background-clip: text;
 }
 /* estilos para el Header */
 @media (min-width: 768px) { 
@@ -86,8 +85,8 @@ a{
 }
 
 .caja-header .logo{
-   display: flex;
-   justify-content: center; 
+    display: flex;
+    justify-content: center; 
 }
 .cabecera-info{
     text-align: center;
