@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#lista-de-personajes{
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+}
+
+#lista-de-personajes div{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#lista-de-personajes div img{
+    width: 80px;
+    border-radius: 50%;
+}
