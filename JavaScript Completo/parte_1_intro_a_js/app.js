@@ -63,21 +63,40 @@ resultado5 = numero1 ** numero2;
 resultado6 = numero1 ++;
 resultado7 = numero1 --;
 
-console.log(resultado, resultado2, resultado3, resultado4,resultado5, resultado6, resultado7)
+console.log(resultado, resultado2, resultado3, resultado4,resultado5, resultado6, resultado7);
 
 
 
 //--------------------
 // Concatenación 
 // -> unir strings
+
+
 saludo = "Hola pedro "
 pregunta = "como estas?"
 
-frase = saludo + pregunta
-console.log(frase)
+frase = saludo + pregunta;
+console.log(frase);
 
 // concatenar un numero -> cuando se detecta un string lo convierte ejemplo = 
 numero1 = 5;
 numero2 = 8; 
 resultado = "" + numero1 + numero2;
-console.log(resultado)
+console.log(resultado);
+
+// con backtiks y la variable entre ${}
+
+nombrebacktiks = "daniel"
+resultadobacktiks = `soy ${nombrebacktiks} y estoy caminando`;
+console.log(resultadobacktiks);
+
+
+
+//--------------------
+// Operadores
+
+//Operadores de Comparación -> comparan dos expresiones y devuelven un valor Boolean que representa la relacion de sus valores, devuelven true o false
+
+// Los operadores de comparación en JavaScript son: == (igualdad, compara valores sin considerar el tipo); === (igualdad estricta, compara valores y tipos de datos); != (desigualdad, compara valores sin considerar el tipo); !== (desigualdad estricta, compara valores y tipos de datos); > (mayor que); < (menor que); >= (mayor o igual que); <= (menor o igual que).
+
+//Operadores Logicos -> 
