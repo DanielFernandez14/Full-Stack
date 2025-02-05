@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 178, 178);
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 10px 6px rgba(0, 0, 0, 0.5);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 40px;
+    border: 2px solid gold;
+    text-decoration: underline;
+    background-color: rgb(156, 171, 14);
+    color: gold;
+    box-shadow: 10px 6px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    text-shadow: 4px 4px rgba(rgb(62, 134, 40), green, blue);
+}
