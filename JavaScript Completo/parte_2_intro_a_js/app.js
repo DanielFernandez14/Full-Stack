@@ -61,7 +61,7 @@ console.log(frase)
 
 
 
-// ----- Sentencia While: el while pregunta siempre hasta que la condicion de falsa. Este bucle se ejecuta mientras una condición sea verdadera. Se usa cuando no sabemos cuántas veces se repetirá la acción.
+// ----- Sentencia WHILE: el while pregunta siempre hasta que la condicion de falsa. Este bucle se ejecuta mientras una condición sea verdadera. Se usa cuando no sabemos cuántas veces se repetirá la acción.
 
 
 // Sintaxis:
@@ -93,8 +93,103 @@ while (contador <= 5) {
 // Se imprime el mensaje y luego contador++ incrementa el valor de contador.
 // Cuando contador llega a 6, la condición es false y el bucle termina
 
+// Ejemplo 2:
+// Pedir al usuario un número válido. Los bucles while son útiles cuando queremos validar entradas del usuario hasta que ingrese un dato correcto.
 
-// ----- Sentencia Do While:
+//let edad = prompt("Ingrese su edad:");
+
+// while (edad < 0 || isNaN(edad)) {
+// edad = prompt("Edad inválida. Ingrese nuevamente su edad:");
+// }
+
+//console.log("Edad ingresada correctamente:", edad);
+
+// Explicación:
+
+// Se solicita un número al usuario.
+// Si el usuario ingresa un número negativo o un valor inválido (isNaN), el while se repite.
+// Cuando se ingresa un número válido, el bucle finaliza.
+
+// El bucle while es útil cuando desconocemos la cantidad exacta de iteraciones y queremos repetir una acción hasta que se cumpla una condición. Sin embargo, es importante evitar bucles infinitos asegurándonos de que la condición eventualmente se vuelva falsa. 🚀
+
+
+
+
+// ----- Sentencia DO WHILE:
+
+//La sentencia do...while es una estructura de control de flujo en JavaScript que permite ejecutar un bloque de código al menos una vez, independientemente de si la condición es verdadera o falsa. Posteriormente, el bucle seguirá iterando mientras la condición especificada continúe siendo verdadera.
+
+// El do...while se usa en situaciones en las que se necesita ejecutar una acción antes de evaluar la condición, como cuando se desea garantizar que una entrada de usuario se procese al menos una vez.
+
+// Sintaxis del Bucle do...while:
+
+// do {
+//     // Bloque de código que se ejecuta al menos una vez
+// } while (condición);
+
+// Explicación:
+
+// Se ejecuta el bloque de código dentro del do {} sin evaluar la condición.
+// Luego, la condición dentro del while() se evalúa.
+// Si la condición es true, el bucle se repite.
+// Si la condición es false, el bucle se detiene.
+
+// Ejemplo: 
+let numero = 1;
+
+do {
+    console.log("Iteración número: " + numero);
+    numero++; // Incrementamos la variable
+} while (numero <= 3);
+
+// Explicación:
+
+// Primera iteración: Se ejecuta console.log("Iteración número: 1") sin evaluar la condición.
+// Se incrementa numero a 2 y se evalúa numero <= 5. Como es true, el bucle se repite.
+// Cuando numero llega a 6, la condición es false y el bucle finaliza.
+
+
+
+// Diferencia entre Do While y While ->
+
+// Do While -> 
+// Evaluación de la condición: Después de ejecutar el bloque de código. 
+// Ejecución mínima garantizada: Se ejecuta al menos una vez, incluso si la condición es false. 
+// Uso recomendado: Cuando se necesita ejecutar el código al menos una vez antes de evaluar la condición.
+
+// While -> 
+// Evaluación de la condición: Antes de ejecutar el bloque de código. 
+// Ejecución mínima garantizada: Puede que no se ejecute ninguna vez si la condición es false desde el inicio. 
+// Uso recomendado: Cuando se necesita evaluar la condición antes de ejecutar el código.
+
+// Aplicaciones Prácticas del Bucle do...while
+// Validación de Entrada del Usuario: Cuando queremos asegurarnos de que el usuario ingrese un valor válido antes de evaluar si la entrada es correcta.
+
+let edad;
+
+do {
+    edad = prompt("Ingrese su edad (debe ser un número válido):");
+} while (isNaN(edad) || edad <= 0 || edad > 120);
+
+console.log("Edad ingresada correctamente:", edad);
+// Explicación:
+
+// El prompt() se ejecuta al menos una vez.
+// Si el usuario ingresa algo incorrecto (NaN o un número negativo), se vuelve a pedir la edad.
+
+//Generación de Números Aleatorios hasta Cumplir una Condición
+
+let numeroAleatorio;
+
+do {
+    numeroAleatorio = Math.floor(Math.random() * 10);
+    console.log("Número generado:", numeroAleatorio);
+} while (numeroAleatorio !== 7);
+
+// Explicación: Se genera un número aleatorio entre 0 y 9. Se repite hasta que salga 7.
+
+
+
 // ----- Sentencia For:
 // ----- Sentencia For In:
 // ----- Sentencia For of:
