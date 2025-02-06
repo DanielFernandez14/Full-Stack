@@ -61,7 +61,7 @@ console.log(frase)
 
 
 
-// ----- Sentencia WHILE: el while pregunta siempre hasta que la condicion de falsa. Este bucle se ejecuta mientras una condición sea verdadera. Se usa cuando no sabemos cuántas veces se repetirá la acción.
+// ----------------------- Sentencia WHILE: el while pregunta siempre hasta que la condicion de falsa. Este bucle se ejecuta mientras una condición sea verdadera. Se usa cuando no sabemos cuántas veces se repetirá la acción.
 
 
 // Sintaxis:
@@ -115,7 +115,7 @@ while (contador <= 5) {
 
 
 
-// ----- Sentencia DO WHILE:
+// ----------------------- Sentencia DO WHILE:
 
 //La sentencia do...while es una estructura de control de flujo en JavaScript que permite ejecutar un bloque de código al menos una vez, independientemente de si la condición es verdadera o falsa. Posteriormente, el bucle seguirá iterando mientras la condición especificada continúe siendo verdadera.
 
@@ -165,13 +165,15 @@ do {
 // Aplicaciones Prácticas del Bucle do...while
 // Validación de Entrada del Usuario: Cuando queremos asegurarnos de que el usuario ingrese un valor válido antes de evaluar si la entrada es correcta.
 
-let edad;
+// let edad;
 
-do {
-    edad = prompt("Ingrese su edad (debe ser un número válido):");
-} while (isNaN(edad) || edad <= 0 || edad > 120);
+// do {
+//     edad = prompt("Ingrese su edad (debe ser un número válido):");
+// } while (isNaN(edad) || edad <= 0 || edad > 120);
 
-console.log("Edad ingresada correctamente:", edad);
+// console.log("Edad ingresada correctamente:", edad);
+
+
 // Explicación:
 
 // El prompt() se ejecuta al menos una vez.
@@ -188,14 +190,222 @@ do {
 
 // Explicación: Se genera un número aleatorio entre 0 y 9. Se repite hasta que salga 7.
 
+// Conclusión
+// El bucle do...while en JavaScript es una estructura de control ideal cuando se necesita ejecutar un bloque de código al menos una vez, sin importar si la condición inicial es verdadera o falsa. Su principal diferencia con while es que en do...while, la condición se evalúa después de la primera ejecución, lo que garantiza que el código dentro del bloque se ejecute al menos una vez.
+
+// Este bucle es útil para validación de entradas de usuario, simulaciones, y procesos que requieren una ejecución inicial antes de validar una condición. Sin embargo, si no se maneja correctamente, puede generar bucles infinitos si la condición nunca se vuelve falsa.
 
 
-// ----- Sentencia For:
-// ----- Sentencia For In:
-// ----- Sentencia For of:
 
-// ----- Sentencia break:
-// ----- Sentencia label:
-// ----- Sentencia continue:
+
+
+
+
+
+// ----------------------- Sentencia FOR: 
+// Es un bucle igual que el while pero es determinado. Se ejecutan las veces nosotros le digamos. El bucle for es una estructura de control de flujo en JavaScript que permite ejecutar un bloque de código un número determinado de veces. Es ideal cuando se conoce de antemano cuántas iteraciones deben realizarse. Se usa comúnmente para recorrer arrays, listas y ejecutar tareas repetitivas de manera eficiente.
+
+// Partes / Parametros del bucle -> declaracion e inicialización, condición, aumento - decremento
+
+for (let i = 1; i <= 5; i++) {
+    console.log("Iteración número en FOR: " + i);
+}
+
+// let i = 1; → Se inicializa la variable i con el valor 1.
+// i <= 5; → Se verifica la condición. Mientras sea true, el código dentro del for se ejecuta.
+// i++ → Se incrementa i después de cada iteración.
+// Cuando i llega a 6, la condición es false y el bucle finaliza.
+
+// Explicación de los parámetros:
+// Inicialización: Se ejecuta una sola vez al inicio del bucle. Se suele usar para declarar e inicializar una variable de control.
+// Condición: Se evalúa antes de cada iteración. Si es true, el código dentro del for se ejecuta. Si es false, el bucle termina.
+// Actualización: Se ejecuta después de cada iteración. Generalmente se usa para incrementar o modificar la variable de control.
+
+// Ejemplo ->
+
+let frutas2 = ["Manzana", "Banana", "Naranja", "Uva"];
+
+for (let i = 0; i < frutas2.length; i++) {
+    console.log("Fruta: " + frutas2[i]);
+}
+// frutas.length devuelve la cantidad de elementos en el array.
+// i < frutas.length garantiza que el bucle se detiene después de recorrer todos los elementos.
+// frutas[i] permite acceder a cada elemento del array.
+
+//Ejemplo cuenta regresiva ->
+
+for (let i = 6; i >= 0; i--){
+    console.log("Cuenta regresiva con bucle For " + i);
+}
+
+for (let i = 0; i < 20; i++) {
+    if(i == 12) {
+        break
+    }
+    console.log("for con un Break " + i)
+}
+
+
+
+
+
+
+
+// ----------------------- Sentencia FOR IN:
+// El bucle for...in en JavaScript es una estructura de control que permite recorrer las propiedades enumerables de un objeto. Se utiliza principalmente para iterar sobre las claves de un objeto y acceder a sus valores asociados.
+
+// Sintaxis: 
+// for (let clave in objeto) {
+     // Bloque de código que se ejecutará en cada iteración
+// }
+
+// Explicación:
+
+// clave → Representa el nombre de cada propiedad del objeto.
+// objeto → Es el objeto que se recorrerá.
+// En cada iteración, clave toma el valor de una propiedad del objeto y el código dentro del bloque se ejecuta.
+
+// Ejemplo -> 
+
+let animales = ["gato", "perro", "pajaro"];
+
+for (animal in animales){
+    console.log(animal)
+}
+// Animal va a ser igual a la posicion de cada uno de los valores -> gato[0], perro[1], pajaro[2]; nos da el indice en el que esta los elementos,
+// Para que los muestre deberia ser
+for (animal in animales) {
+    console.log("Para que nos muestre con un IN " + animales[animal])
+}
+
+// Conclusión
+// El bucle for...in en JavaScript es una herramienta poderosa para recorrer propiedades de objetos, permitiendo acceder dinámicamente a sus valores.
+
+// 🔹 Cuándo usar for...in:
+// ✅ Cuando se trabaja con objetos y se necesita iterar sobre sus propiedades.
+
+// ⚠ Cuándo NO usar for...in:
+// ❌ Para recorrer arrays, ya que devuelve los índices en lugar de los valores y puede incluir propiedades no deseadas. Para arrays, se recomienda for, forEach() o for...of.
+
+
+
+
+
+
+
+
+// ----------------------- Sentencia FOR OF:
+// Nos muestra el valor de los elementos, recorre el array
+
+for (animal of animales){
+    console.log(animal)
+}
+
+
+
+
+
+
+
+
+
+// ----------------------- Sentencia break: Un break termina la sentencia
+
+let numero2 = 0;
+
+while(numero2 < 15) {
+    numero2++;
+    console.log(numero2);
+    if (numero2 == 10) {
+        break; // cuando el break se ejecuta el bucle sale.
+    }
+}
+
+console.log("Fin del bucle por el break")
+
+
+
+
+// ----------------------- Sentencia label:
+// Nos permite asociar un bucle (excepto ForEach) a un nombre para poder terminarlo cuando queramos
+// Ejemplo si tenemos un array dentro de una array
+// En JavaScript, la sentencia label (etiqueta) es una estructura que permite asignar un identificador a un bloque de código o a un bucle. Su propósito principal es facilitar el uso de las instrucciones break y continue en estructuras anidadas, permitiendo romper o continuar un bloque de código específico.
+
+// Una etiqueta se define anteponiendo un nombre seguido de dos puntos (:) antes del bloque de código o del bucle al que se quiere hacer referencia.
+
+
+// Sintaxis -> nombreEtiqueta: 
+            // instrucción;
+
+// Ejemplo -> 
+etiquetaBucle: 
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        if (j === 3) {
+            break etiquetaBucle; // Rompe el bucle etiquetado
+        }
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
+//Explicación -> La etiqueta etiquetaBucle marca el inicio del bucle externo Cuando j === 3, la instrucción break etiquetaBucle; rompe directamente el bucle externo, no solo el interno.
+
+
+// Usos ->  Usos de la Sentencia label:
+
+// La sentencia label se utiliza principalmente en los siguientes casos:
+// Romper múltiples bucles anidados con break.
+// Saltar iteraciones específicas en bucles anidados con continue.
+// Facilitar la lectura y manipulación de estructuras de control complejas.
+
+//Ejemplo con break y label
+// Cuando se usa break dentro de un bucle anidado sin etiqueta, solo rompe el bucle más interno. Con label, podemos romper un bucle específico.
+outerLoop: 
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log(`i: ${i}, j: ${j}`);
+        if (i === 1 && j === 1) {
+            break outerLoop; // Rompe el bucle etiquetado
+        }
+    }
+}
+// Explicación: break outerLoop; rompe el bucle externo outerLoop, no solo el interno.
+// Sin la etiqueta, break solo saldría del bucle más interno.
+
+
+// Ejemplo con continue y label -> Continue en combinación con label permite saltar a la siguiente iteración de un bucle externo, evitando que se ejecuten instrucciones en iteraciones específicas.
+
+outerLoop: 
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        if (i === 1 && j === 1) {
+            console.log("Saltando la iteración con i = 1 y j = 1");
+            continue outerLoop; // Salta a la siguiente iteración del bucle externo
+        }
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
+// Explicación -> Cuando i === 1 && j === 1, la instrucción continue outerLoop; hace que la iteración actual del bucle externo se detenga y pase a la siguiente iteración de i.
+// Sin label, continue solo afectaría al bucle más interno.
+
+//Característica: break -> Función: Termina un bucle. Afecta a Solo al bucle actual (o etiquetado). Uso con label Permite romper un bucle externo.
+
+//Característica: continue -> Función: 	Salta una iteración. Afecta a Solo al bucle actual (o etiquetado). Uso con label Permite saltar iteraciones de un bucle externo.
+
+//Característica: label -> Función: Define un identificador para un bloque de código. Afecta a Cualquier bloque o bucle. Uso con label Se usa para referenciar bloques de código.
+
+
+
+
+
+
+// ----------------------- Sentencia continue:
+// Ejemplo -> 
+for (let i = 0; i < 6; i++) {
+    if(i == 4) {
+        continue
+    }
+    console.log("Usando Continue " + i) // salta el numero/dato y continua el bucle
+}
+
 
 
