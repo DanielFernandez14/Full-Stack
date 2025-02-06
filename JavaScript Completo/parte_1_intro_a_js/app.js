@@ -211,4 +211,8 @@ if (namee == "Daniel") {
     console.log("holaa")
 } else if (namee == "Dalto") {
     console.log("Tu nombre es " + namee)
+} else  {
+    console.log("Tu nombre es otro")
 }
+
+// Else -> es el "caso por defecto" cuando ninguna condición anterior se cumple.
