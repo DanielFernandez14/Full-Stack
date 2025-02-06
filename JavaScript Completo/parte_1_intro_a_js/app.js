@@ -54,7 +54,7 @@ let numero = null; // esta inicializada y su valor es null (vacia)
 numero1 = 10; 
 numero2 = 5;
 
-resultado = numero1 + numero2;
+resultadoo = numero1 + numero2;
 resultado1 = numero1 - numero2;
 resultado2 = numero1 * numero2;
 resultado3 = numero1 / numero2;
@@ -63,7 +63,7 @@ resultado5 = numero1 ** numero2;
 resultado6 = numero1 ++;
 resultado7 = numero1 --;
 
-console.log(resultado, resultado2, resultado3, resultado4,resultado5, resultado6, resultado7);
+console.log(resultadoo, resultado2, resultado3, resultado4,resultado5, resultado6, resultado7);
 
 
 
@@ -81,8 +81,8 @@ console.log(frase);
 // concatenar un numero -> cuando se detecta un string lo convierte ejemplo = 
 numero1 = 5;
 numero2 = 8; 
-resultado = "" + numero1 + numero2;
-console.log(resultado);
+resultadooo = "" + numero1 + numero2;
+console.log(resultadooo);
 
 // con backtiks y la variable entre ${}
 
@@ -97,6 +97,104 @@ console.log(resultadobacktiks);
 
 //Operadores de Comparación -> comparan dos expresiones y devuelven un valor Boolean que representa la relacion de sus valores, devuelven true o false
 
-// Los operadores de comparación en JavaScript son: == (igualdad, compara valores sin considerar el tipo); === (igualdad estricta, compara valores y tipos de datos); != (desigualdad, compara valores sin considerar el tipo); !== (desigualdad estricta, compara valores y tipos de datos); > (mayor que); < (menor que); >= (mayor o igual que); <= (menor o igual que).
+//compara datos | valores -> devolver booleano (true o false)
+//Simbolos --> ">" (mayor), "<"(menor), ">="(mayor igual que), "<="(menor igual que), "==="(compara datos, valores y tipo), "=="(compara datos), "!=" (distinto: compara valores, datos), "!=="(distinto: compara valores, datos y su tipo)
+//compara tipo de dato (string, boolean o number) y valor)
 
-//Operadores Logicos -> 
+let numero10 = 23;
+let numero20 = 13;
+
+console.log(numero10 = numero20);
+
+// Los operadores de comparación en JavaScript son: 
+
+// == (igualdad, compara valores sin considerar el tipo); 
+console.log(numero10 == numero20);
+
+// === (igualdad estricta, compara valores y tipos de datos); 
+console.log(numero10 === numero20);
+
+// != (desigualdad, compara valores sin considerar el tipo); 
+console.log(numero10 != numero20);
+
+// !== (desigualdad estricta, compara valores y tipos de datos); 
+console.log(numero10 !== numero20);
+
+// > (mayor que); 
+
+// < (menor que); 
+
+// >= (mayor o igual que); 
+
+// <= (menor o igual que)
+
+
+//Operadores Logicos -> Nos devuelven un resultado a partir de que se cumpla (o no) una condición, su resultado es booleano, y sus operandos son valores logicos o asimilables a ellos.
+
+// AND (&&) si las dos condiciones se cumplen el resultado va a ser TRUE. si una (cualquiera de las dos) es distinta, va a dar false. 
+// false && true -> false
+// true && false -> false 
+// true && true -> true
+// false && false -> true
+
+let valor = true;
+let valor2 = true;
+
+let resultado = valor && valor2;
+console.log(valor && valor2)
+
+// OR "o" || -> con que una de las operaciones me de true, el resultado final siempre da true
+// false || true -> true
+// true || false -> true
+// true || true -> true
+// false || false -> false
+
+let valor10 = false;
+let valor20 = false;
+
+let resultado20 = valor || valor2;
+let resultado21 = 
+console.log(resultado20); 
+console.log(valor10 || valor20);
+
+
+// NOT ! -> Regresa lo contrario de lo que le devuelvo, funciona con true o false unicamente.
+//NOT ! -> "no" "negacion" -> niega la operacion (si no se cumple me devuelve verdadero)
+let resultado30 = !valor;
+
+console.log(!valor10) //true
+
+//Ejemplos
+
+let num1 = 12;
+let num2 = 24;
+let num3 = 25;
+let num4 = 92;
+let num5 = 91;
+
+
+let operacion = (num1 < num2 || num2 < num3) && (!(num1 != num2) && num5 !=num3);
+//               true    ||    true      &&        false     &&    true     
+//                      true             &&                  false
+//                                      false
+console.log(operacion)
+
+
+let operacion2 = (num5 > num2 && num4 < num3) || (!(num1 === num2) || num3 != num3);
+//                true    &&     true     ||       true        ||     false
+//                       true             ||                  true
+//                                       true
+console.log(operacion2);
+
+// camelCase -> la primera palabra en minuscula y la segunda palabra con mayuscula
+
+
+//--------------------
+// Condicionales -> es una sentencia que nos permite validar algo, ejecuta una parte de codigo. 
+// // Los condicionales en JavaScript permiten ejecutar diferentes bloques de código dependiendo de si una condición es verdadera o falsa. Son esenciales para la lógica de control de flujo en cualquier programa.
+
+// If, ElseIf, Else ->
+if (101 < 15) { 
+    alert("Hola!") 
+}
+// se ejecutaria si 15 fuera mayor que el primer numero ya que da false (operador de comparación)
