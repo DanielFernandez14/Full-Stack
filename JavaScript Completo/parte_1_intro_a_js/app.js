@@ -197,4 +197,18 @@ console.log(operacion2);
 if (101 < 15) { 
     alert("Hola!") 
 }
-// se ejecutaria si 15 fuera mayor que el primer numero ya que da false (operador de comparación)
+// se ejecutaria si 15 fuera mayor que el primer número ya que da false (operador de comparación)
+
+let name = "Lucas Dalto";
+if (name == "Lucas Dalto") {
+    console.log("hola")
+}
+
+// Else if -> podemos poner los que queramos. Si lo anterior no se cumple vamos a ver otra condición
+
+let namee = "Daniel";
+if (namee == "Daniel") {
+    console.log("holaa")
+} else if (namee == "Dalto") {
+    console.log("Tu nombre es " + namee)
+}
