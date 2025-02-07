@@ -393,7 +393,59 @@ for (let i = 0; i < 3; i++) {
 
 //Característica: label -> Función: Define un identificador para un bloque de código. Afecta a Cualquier bloque o bucle. Uso con label Se usa para referenciar bloques de código.
 
+// Conclusión
+// La sentencia label en JavaScript es una herramienta avanzada que permite identificar bloques de código y referenciarlos en instrucciones break o continue.
 
+// 🔹 Cuándo usar label:
+// ✅ En estructuras anidadas donde es necesario romper o saltar iteraciones de bucles externos.
+
+// 🔹 Cuándo evitar label:
+// ❌ En código simple o cuando hay alternativas más claras como funciones auxiliares o return.
+
+// Su uso correcto puede mejorar la eficiencia y claridad del código en ciertos escenarios, pero debe utilizarse con precaución para evitar confusión y dificultar la depuración. 🚀
+
+
+// Otro ejemplo -> 
+
+let array1 = ["maría", "josefa", "roberta"];
+let array2 = ["pedro", "marcelo", array1, "josefina"];
+
+forRancio:
+for (let array in array2) {  // 'array' representa los índices (0,1,2,3)
+    if (array == 2) {  // Cuando array es 2, accedemos a array1
+        for (let array of array1) { // Iteramos sobre ["maría", "josefa" "roberta"]
+            console.log(array); // Escribe "maría"
+            break forRancio;  // Sale de todos los bucles inmediatamente
+        }
+    } else {
+        console.log(array2[array]);
+    }
+}
+
+// Ejecución línea por línea:
+// array2 se recorre con for...in
+// array = 0 → "pedro" se imprime.
+// array = 1 → "marcelo" se imprime.
+// array = 2 → Se activa el bloque if porque array == 2.
+// Se entra en el for...of para recorrer array1
+// La primera iteración toma "maría".
+// document.write("maría" + "<br>") imprime "maría".
+// break forRancio; se ejecuta y rompe ambos bucles, por lo que "josefa" y "roberta" no llegan a imprimirse.
+
+
+//Explicación del Código:
+
+// Se definen dos arreglos:
+
+// array1 con nombres.
+// array2, que incluye array1 como su tercer elemento.
+// Se usa un bucle for...in para iterar sobre array2, donde array es el índice de cada elemento.
+
+// Cuando array == 2 (es decir, cuando se accede al tercer elemento de array2, que es array1):
+
+// Se inicia un bucle for...of para iterar sobre array1 y escribir sus elementos en pantalla.
+// Luego, se usa break forRancio; para romper ambos bucles y salir completamente del ciclo.
+// Si array != 2, se imprime el elemento correspondiente de array2.
 
 
 
@@ -406,6 +458,18 @@ for (let i = 0; i < 6; i++) {
     }
     console.log("Usando Continue " + i) // salta el numero/dato y continua el bucle
 }
+
+
+
+
+
+/* ----------------------- FUNCIONES ----------------------- */
+// Definición y usos
+// Formas de crear funciones y llamarlas ->
+// Return ->
+// Parametros ->
+// Scope ->
+// Funciones Flecha ->
 
 
 
