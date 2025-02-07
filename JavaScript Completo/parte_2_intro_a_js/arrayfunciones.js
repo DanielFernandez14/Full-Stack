@@ -471,5 +471,187 @@ for (let i = 0; i < 6; i++) {
 // Scope ->
 // Funciones Flecha ->
 
+// Una funcion es una porcion de codigo, se utiliza para no tener que volver a escribir todo el codigo o bloque de codigo que vayamos a utilizar (por ejemplo una suma, resta, etc), ya con el nombre que nosotros le damos a esa porcion de codigo lo podemos reutilizar. Cuando llamamos a el nombre que le dimos a esa función es como si llamaramos a todo el bloque de codigo.
+// Cada funcion debe tener un unico uso, por ejemplo una funcion para sumar, otra para restar, otra para multiplicar, otra para arrancar, otra para frenar. cada funcion con sus caracteristicas.
+// Primero se crea la funcion y luego debemos llamarla para poder usarla
 
 
+
+// Asi se declara una función
+function saludar (){ // nombre de la funcion -> saludar
+    respuesta = prompt("hola dani como fue tu dia");
+    if (respuesta == "bien"){
+        alert("me alegro")
+    } else {
+        alert("una pena")
+    }
+};
+
+// Así se llama una funcion para utilizarla 
+// saludar()
+// saludar()
+
+
+// ----------------------- RETURN -> sirve para que nos devuelva un valor, para que un bloque de codigo, una funcion por ejemplo, se convierta en un tipo de dato, para que no haga algo simplemente, sino que tambien tenga un valor. El return le dice a la variable que tipo de dato va a ser, el bloque en si solo no vale nada unicamente ejecuta lo que esta dentro, pero no es un booleano, un number, un array, un string, solo es un bloque de codigo. Cuando la funcion finaliza se convierte en lo que estamos retornando. Si esta primero, por ejemplo el return arriba del alert, se ejecutaria primero el return y no se ejecutaria el alert.
+
+
+function saludar() {
+    alert("hola");
+    return "la funcion se ejecuto correctamente"
+}
+// saludar();
+console.log(saludar)
+
+
+// ----------------------- Parametros
+// Las funciones no son funciones sin los parametros, sin que pueda variar lo que hace.
+// Los parametros son los valores que nosotros le damos a una funcion una vez que la llamamos, por ejemplo ->
+
+function suma(num1, num2){
+    let res = num1 + num2;
+    console.log(res)
+    return res
+}
+
+let resultado = suma(20,25);
+console.log(resultado)
+
+//
+
+function saludar1(nombre){
+    let frase = `Hola ${nombre}, ¿Cómo estás?`
+    console.log(frase)
+}
+saludar1("Daniel")
+
+
+//-----------------------Scope
+// El Scope (o ámbito) en JavaScript define el alcance o visibilidad de las variables y funciones dentro de un programa. Es decir, determina desde qué partes del código se puede acceder a una variable.
+
+// Scope Global
+// Las variables declaradas fuera de cualquier función o bloque pertenecen al ámbito global y pueden ser accedidas desde cualquier parte del código.
+
+let nombree = "Josiueb"; // Variable global
+
+function saludar() {
+    console.log("Hola, " + nombree); // Puede acceder a 'nombre' porque es global
+}
+
+saludar(); // Salida: Hola, Josiueb
+console.log(nombree); // Salida: Josiueb
+
+
+// Scope Local (o de Función)
+// Las variables declaradas dentro de una función solo pueden ser usadas dentro de esa función.
+
+function mostrarEdad() {
+    let edad = 25; // Variable local, solo existe dentro de esta función
+    console.log("Edad:", edad);
+}
+
+mostrarEdad(); // Salida: Edad: 25
+//console.log(edad); // ❌ Error: edad is not defined
+
+
+
+
+//----------------------- Funciones Flecha
+// Las funciones flecha en JavaScript son una forma más compacta y moderna de escribir funciones en comparación con las tradicionales declaradas con function. Fueron introducidas en ECMAScript 6 (ES6) y permiten escribir código más limpio y conciso, eliminando la necesidad de escribir function, return e incluso las llaves {} en algunos casos.
+
+
+// Una función flecha es una función anónima que tiene la siguiente sintaxis básica:
+const nombreFuncion = (parametros) => {
+    // Cuerpo de la función
+};
+
+//  Diferencias con las funciones tradicionales:
+// No usa la palabra clave function.
+// Usa la flecha => para separar los parámetros del cuerpo.
+// Puede omitir las llaves {} si tiene una sola línea de código.
+// Puede omitir return cuando la función devuelve un valor en una sola línea.
+// No tiene su propio this (esto es crucial en ciertos contextos).
+
+
+// Características Avanzadas de las Funciones Flecha
+// 🔹 1. Retorno Implícito
+// Si la función tiene solo una expresión, el valor se devuelve automáticamente sin necesidad de return:
+const multiplicar = (a, b) => a * b;
+console.log(multiplicar(3, 4)); // Salida: 12
+
+// 2. No tiene su propio this
+// Una de las diferencias más importantes entre las funciones flecha y las funciones tradicionales es que las funciones flecha no tienen su propio this, sino que heredan el this del contexto en el que fueron definidas.
+
+// ✅ Ejemplo con una función tradicional (function)
+const persona = {
+    nombre: "Josiueb",
+    saludar: function() {
+        console.log(`Hola, soy ${this.nombre}`);
+    }
+};
+
+persona.saludar(); // Salida: Hola, soy Josiueb
+
+// ❌ Ejemplo con una función flecha (Error)
+const persona2 = {
+    nombre: "Josiueb",
+    saludar: () => {
+        console.log(`Hola, soy ${this.nombre}`);
+    }
+};
+
+persona2.saludar(); // Salida: Hola, soy undefined
+
+// Explicación:
+
+// En la función flecha, this no hace referencia al objeto persona2, sino al contexto global, lo que causa que this.nombre sea undefined.
+
+
+// Las funciones flecha son ideales para los métodos de arrays como map(), filter(), forEach(), etc.
+
+// ✅ Ejemplo con map()
+const numeros = [1, 2, 3, 4, 5];
+const dobles = numeros.map(num => num * 2);
+
+console.log(dobles); // Salida: [2, 4, 6, 8, 10]
+// ✅ Ejemplo con filter()
+const edades = [18, 25, 30, 15, 40];
+const mayoresDeEdad = edades.filter(edad => edad >= 18);
+
+console.log(mayoresDeEdad); // Salida: [18, 25, 30, 40]
+
+
+// Diferencias entre Función Tradicional y Función Flecha
+
+// Función Tradicional -> Característica: Uso de this -> Tiene su propio this .Uso de arguments -> Disponible.  Retorno -> Requiere return si es más de una línea. Sintaxis -> Más extensa.
+
+// Función Flecha -> Característica: Uso de this -> Hereda el this del contexto exterior. Uso de arguments -> No disponible. Retorno -> Retorno implícito si es una sola línea. Sintaxis -> Más corta y concisa.
+
+
+const saludar2 = (nombre) => { // si solo usamos un parametro no hace falta poner parentesis
+    let frase1 = `Hola ${nombre}, ¿Cómo estás?`;
+    console.log(frase1)
+}
+
+saludar2("Daniel")
+
+
+
+// Cuándo Usar Funciones Flecha y Cuándo No
+// ✅ Usar funciones flecha cuando:
+// ✔ Se necesiten funciones cortas y concisas.
+// ✔ Se trabaje con callbacks en map(), filter(), reduce(), etc.
+// ✔ No se necesite el contexto this (por ejemplo, en funciones puras).
+
+// ❌ No usar funciones flecha cuando:
+// ❌ Se necesite acceder a this dentro de un objeto.
+// ❌ Se necesite el objeto arguments (las funciones flecha no tienen arguments).
+// ❌ Se quiera una función constructora con new (las funciones flecha no pueden ser usadas como constructores).
+
+//📢 Conclusión
+// Las funciones flecha en JavaScript ofrecen una forma más concisa y moderna de escribir funciones, mejorando la legibilidad del código. Sin embargo, su comportamiento con this puede generar confusión en ciertos contextos. Son ideales para callbacks y funciones cortas, pero no para métodos de objetos o constructores.
+
+// 📌 Resumen Final:
+// 🔹 Son más cortas y limpias.
+// 🔹 No tienen su propio this.
+// 🔹 No pueden ser usadas como constructores.
+// 🔹 Son perfectas para callbacks y métodos de arrays.
