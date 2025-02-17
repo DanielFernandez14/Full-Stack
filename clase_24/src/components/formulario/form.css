@@ -1,0 +1,46 @@
+
+h2{
+    padding-top: 40px;
+}
+
+form {
+    background-color: yellowgreen;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+}
+
+input, label{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    outline: 1px solid pink;
+}
+
+label{
+    margin-top: 10px;
+    
+}
+
+button{
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: scale 0.3s;
+}
+
+

@@ -1,0 +1,25 @@
+.cont.list{
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+}
+
+.item.list{
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.item-list:hover{
+    animation: move 2s infinite ;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

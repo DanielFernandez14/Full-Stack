@@ -71,7 +71,7 @@ export{ ComponenteConEstado }
 // React usa key para identificar cada elemento en la lista y optimizar la renderización.
 // Si no hay key o todas son iguales, React puede confundirse y volver a renderizar más de lo necesario, afectando el rendimiento.
 
-// Si sigues viendo el error después de agregar key, dime qué código tienes y lo revisamos juntos. 🚀
+
 // Explicación del Fix
 // 🔹 key={index} en el .map() evita el error en la consola.
 // 🔹 Se corrigió la validación en sumar(): ahora click solo se incrementa si es menor que producto.stock, evitando pasarse del stock.
