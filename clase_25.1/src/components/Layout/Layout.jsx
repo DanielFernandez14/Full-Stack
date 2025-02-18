@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./Layout.css" 
 
 const Layout = (props) => {
@@ -7,9 +8,9 @@ const Layout = (props) => {
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702" alt="Imagen de Logo" />
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li> <a href="./PerroAleatorio">Perro Aleatorio</a></li>
-                    <li><a href="./Contacto">Contacto</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li> <Link to="/PerroAleatorio">Perro Aleatorio</Link></li>
+                    <li><Link to="/Contacto">Contacto</Link></li>
                 </ul>
             </nav>
         </header>

@@ -6,9 +6,10 @@ import { Layout } from './components/Layout/Layout.jsx'
 import { Home } from './Pages/Home/Home.jsx'
 import { PerroAleatorio } from './Pages/PerroAleatorio/PerroAleatorio.jsx'
 import { Contacto } from './Pages/Contacto/Contacto.jsx'
+import { Router } from './router/router.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PerroAleatorio />
+    <Router />
   </StrictMode>,
 )

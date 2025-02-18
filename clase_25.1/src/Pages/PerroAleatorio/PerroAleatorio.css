@@ -3,13 +3,16 @@
     color: white;
     font-size: 18px;
     font-weight: bold;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 12px 24px;
-    margin: 40px;
+    display: block;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
     overflow: hidden;
 
 }
