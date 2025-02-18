@@ -5,17 +5,14 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-
 header img{
     width: 120px;
 }
-
 header ul{
     list-style: none;
     display: flex;
     gap: 20px;
 }
-
 header ul li{
     background-color: tomato;
     padding: 10px;
@@ -25,16 +22,13 @@ header ul li{
     cursor: pointer;
     transition: scale 0.2s;
 }
-
 header ul li:hover{
     scale: 1.05;
 }
-
 main{
     padding: 20px;
     min-height: 100vh; /*para hacer que el footer se vaya para abajo y ocupe todo el espacio el main*/
 }
-
 footer{
     background-color: violet;
     padding: 20px;
