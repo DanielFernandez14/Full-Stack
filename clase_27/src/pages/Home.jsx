@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Layout } from "../components/Layout";
+import { getServices } from "../services/service";
+
 
 const Home = () => {
     const [servicios, setServicios] = useState([]);
@@ -12,6 +14,15 @@ const Home = () => {
             { id: 3, titulo: "Monitorización 24/7", descripcion: "Supervisión constante para detectar amenazas.", icono: "fas fa-eye", color: "has-background-white" },
         ]);
     }, []);
+
+// Cargar los servicios desde Firebase al montar el componente
+useEffect(() => {
+    const fetchServices = async () => {
+    const data = await getServices();
+    setServicios(data);
+    };
+    fetchServices();
+}, []);
 
     return (
         <Layout>
@@ -362,7 +373,7 @@ background: linear-gradient(180deg, rgba(10,15,36,1) 20%, rgba(19,17,100,1) 42%,
             {/* Footer */}
             <footer className="footer-section">
                 <div className="container has-text-centered">
-                    <h2 className="footer-title">CyberShield Security</h2>
+                    <h2 className="footer-title">DanoDev Security</h2>
                     <p className="footer-subtitle">Protegiendo tu empresa con tecnología de vanguardia.</p>
                     
                     <div className="footer-links">
@@ -379,7 +390,7 @@ background: linear-gradient(180deg, rgba(10,15,36,1) 20%, rgba(19,17,100,1) 42%,
                         <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
                     </div>
 
-                    <p className="footer-text">© 2025 CyberShield Security. Todos los derechos reservados por DanoDev.</p>
+                    <p className="footer-text">© 2025 DanoDev Security. Todos los derechos reservados por DanoDev.</p>
                 </div>
             </footer>
 
