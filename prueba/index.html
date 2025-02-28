@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo Futurista</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, 
+                #030b17, #072038, #157A8A, #005950, #3D1E6D, #5F0F40, #521e48, #1B4965);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s infinite alternate ease-in-out;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido al Mundo Futurista</h1>
+        <p>Explorando colores de programación y hacking</p>
+    </div>
+</body>
+</html>
