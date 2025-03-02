@@ -8,9 +8,11 @@ const Contacto = () => {
     const [consulta, setConsulta] = useState("");
     const [mensaje, setMensaje] = useState("");
     const [mensajeEnviado, setMensajeEnviado] = useState(false);
+    const [formData, setFormData] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setFormData({ nombre, email, consulta, mensaje });
         setMensajeEnviado(true);
 
         setNombre("");
@@ -81,6 +83,18 @@ const Contacto = () => {
 
                     <button type="submit" className="btn-enviar">Enviar</button>
                 </form>
+
+                {mensajeEnviado && formData && (
+                    <div className="popup" style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--text-light)' }}>
+                        <div className="popup-content">
+                            <h2>Información Enviada</h2>
+                            <p><strong>Nombre:</strong> {formData.nombre}</p>
+                            <p><strong>Email:</strong> {formData.email}</p>
+                            <p><strong>Consulta:</strong> {formData.consulta}</p>
+                            <p><strong>Mensaje:</strong> {formData.mensaje}</p>
+                        </div>
+                    </div>
+                )}
             </div>
         </Layout>
     );

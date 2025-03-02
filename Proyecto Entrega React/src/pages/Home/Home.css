@@ -12,7 +12,6 @@
     --text-bright: #CCD6F6;
 }
 
-/* Estilos Globales */
 body {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -21,7 +20,6 @@ body {
     padding: 0;
 }
 
-/* Contenedor Principal */
 .home {
     text-align: center;
     padding: 60px 20px;
@@ -94,9 +92,10 @@ body {
 }
 
 .home__list-item:hover {
-    background: var(--light-accent);
+    background: #00a3cc8f;
     transform: scale(1.05);
     box-shadow: 0px 0px 15px var(--neon-cyan);
+    color: whitesmoke;
 }
 
 

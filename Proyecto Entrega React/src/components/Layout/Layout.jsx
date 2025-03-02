@@ -16,7 +16,7 @@ const Layout = (props) => {
             <main>
                 {props.children}
             </main>
-            <footer>Sitio desarrollado por Danco Web</footer>
+            <footer className="footer_class">Sitio desarrollado por Danco Web 2025<i class='bx bxs-registered'></i> </footer>
         </>
     )
 }
