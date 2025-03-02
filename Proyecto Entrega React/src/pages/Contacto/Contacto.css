@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --bg-dark: #010409;
+    --bg-form: #0A192F;
+    --border-neon: #00D4FF;
+    --text-light: #A8B2D1;
+    --text-bright: #CCD6F6;
+    --hover-glow: rgba(0, 212, 255, 0.5);
+}
+
+.contacto-container {
+    background-color: var(--bg-dark);
+    color: var(--text-bright);
+    font-family: 'Share Tech Mono', monospace;
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--hover-glow);
+}
+
+.contacto-titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito {
+    background: var(--border-neon);
+    color: var(--bg-dark);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form label {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    background: var(--bg-form);
+    border: 2px solid var(--border-neon);
+    color: var(--text-bright);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    box-shadow: 0px 0px 10px var(--border-neon);
+    border-color: var(--border-neon);
+}
+
+.btn-enviar {
+    background: var(--border-neon);
+    color: var(--bg-dark);
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-enviar:hover {
+    box-shadow: 0px 0px 15px var(--hover-glow);
+    transform: scale(1.05);
+}

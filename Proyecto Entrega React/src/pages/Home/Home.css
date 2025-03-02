@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --dark-bg: #010409;
+    --primary-bg: #0A192F;
+    --secondary-bg: #112240;
+    --accent: #00D4FF;
+    --light-accent: #00A3CC;
+    --neon-blue: #0085FF;
+    --neon-cyan: #00E6E6;
+    --text-light: #A8B2D1;
+    --text-bright: #CCD6F6;
+}
+
+/* Estilos Globales */
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor Principal */
+.home {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home__title {
+    font-size: 2.8rem;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
+    margin-bottom: 25px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.home__intro {
+    font-size: 1.3rem;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.home__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.home__section {
+    background-color: var(--secondary-bg);
+    border-left: 4px solid var(--neon-blue);
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 132, 255, 0.2);
+}
+
+.home__section:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px var(--accent);
+    border-left-color: var(--neon-cyan);
+}
+
+.home__subtitle {
+    font-size: 1.8rem;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+    margin-bottom: 18px;
+}
+
+.home__text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.home__list {
+    list-style: none;
+    padding: 0;
+}
+
+.home__list-item {
+    background: var(--primary-bg);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    border-left: 4px solid var(--neon-blue);
+}
+
+.home__list-item:hover {
+    background: var(--light-accent);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px var(--neon-cyan);
+}
+
+
+.home__conclusion {
+    font-size: 1.2rem;
+    margin-top: 35px;
+    padding: 25px;
+    background: var(--primary-bg);
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 12px var(--neon-blue);
+}
+

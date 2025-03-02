@@ -1,53 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-.imgHeader {
-    width: 200px;
-    height: 180px;
-    border-radius: 70%;
+:root {
+    --dark-bg: #010409;
+    --primary-bg: #0A192F;
+    --secondary-bg: #112240;
+    --accent: #00D4FF;
+    --neon-blue: #0085FF;
+    --text-light: #A8B2D1;
+    --text-bright: #CCD6F6;
 }
 
 header {
-    background-color: #071b34;
-    padding: 20px;
+    background-color: var(--primary-bg);
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid rgba(0, 26, 255, 0.5);
-    box-shadow: 0px 4px 10px rgba(53, 36, 109, 0.2);
+    border-bottom: 2px solid var(--neon-blue);
+    box-shadow: 0px 4px 20px rgba(0, 132, 255, 0.2);
+    font-family: 'Share Tech Mono', monospace;
+    position: relative;
+}
+
+.imgHeader {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
 }
 
 header ul {
     display: flex;
     gap: 20px;
     list-style: none;
-    font-size: large;
+    font-size: 1.2rem;
     text-shadow: 1px 1px black;
-    font-family: 'Share Tech Mono', monospace; 
 }
 
 header ul li {
-    background-color: rgba(33, 54, 107, 0.63);
-    padding: 15px 25px;
-    color: rgba(245, 245, 245, 0.881);
+    background-color: rgba(0, 132, 255, 0.15);
+    padding: 16px 20px;
+    color: var(--text-bright);
     font-weight: 900;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    border: 2px solid rgb(44, 38, 87);
+    border: 2px solid rgba(0, 132, 255, 0.5);
     text-transform: uppercase;
 }
 
+header ul li a {
+    color: var(--text-bright);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px var(--neon-blue);
+    border-color: var(--neon-blue);
+}
+
 header ul li::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     width: 300%;
     height: 300%;
-    background: radial-gradient(linear, rgba(13, 99, 133, 0.489) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.3) 0%, transparent 60%);
     transition: all 0.4s ease-in-out;
     transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
 }
 
 header ul li:hover::before {
@@ -55,22 +80,13 @@ header ul li:hover::before {
     opacity: 0;
 }
 
-header ul li:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 15px rgb(39, 36, 89);
-    border-color: #071b34;
-}
-
-main{
-    padding: 20;
-    min-height: 100vh;
-}
-
-footer{
-    background-color: #071b34;
-    color: whitesmoke;
+footer {
+    background-color: var(--primary-bg);
+    color: var(--text-bright);
     font-family: 'Share Tech Mono', monospace;
     display: flex;
     justify-content: center;
     padding: 20px;
+    border-top: 2px solid var(--neon-blue);
+    box-shadow: 0px -4px 20px rgba(0, 132, 255, 0.2);
 }

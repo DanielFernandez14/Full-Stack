@@ -1,20 +1,20 @@
 import "./Layout.css"
 
-const Layout = () => {
+const Layout = (props) => {
     return (
         <>
             <header>
                 <img className="imgHeader" src="Fav Icon.jpeg" alt="Logo" />
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Random Dog</li>
-                        <li>Contacto</li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="./perro-aleatorio">Proyectos</a></li>
+                        <li><a href="./contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <h2>Contenido dinamico de cada pagina</h2>
+                {props.children}
             </main>
             <footer>Sitio desarrollado por Danco Web</footer>
         </>
