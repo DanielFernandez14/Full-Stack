@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./Layout.css"
 
 const Layout = (props) => {
@@ -7,16 +8,17 @@ const Layout = (props) => {
                 <img className="imgHeader" src="Fav Icon.jpeg" alt="Logo" />
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="./perro-aleatorio">Proyectos</a></li>
-                        <li><a href="./contacto">Contacto</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/RyMAleatorio">API-test</Link></li>
+                        <li><Link to="/Contacto">Contacto</Link></li>
                     </ul>
                 </nav>
             </header>
             <main>
                 {props.children}
             </main>
-            <footer className="footer_class">Sitio desarrollado por Danco Web 2025<i class='bx bxs-registered'></i> </footer>
+            <footer className="footer_class">Sitio desarrollado por Danco Web 2025<i className="bx bxs-registered"></i>
+            </footer>
         </>
     )
 }
