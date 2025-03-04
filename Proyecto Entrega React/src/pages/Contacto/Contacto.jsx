@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Contacto.css";
 import { Layout } from "../../components/Layout/Layout";
 
@@ -19,8 +19,17 @@ const Contacto = () => {
         setEmail("");
         setConsulta("");
         setMensaje("");
-
     };
+
+    useEffect(() => {
+        if (mensajeEnviado) {
+            const timer = setTimeout(() => {
+                setMensajeEnviado(false);
+            }, 6000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [mensajeEnviado]);
 
     return (
         <Layout>
@@ -29,7 +38,7 @@ const Contacto = () => {
 
                 {mensajeEnviado && (
                     <div className="mensaje-exito">
-                        Consulta enviada con éxito, contestaremos lo antes posible.
+                        Te contactamos lo antes posible
                     </div>
                 )}
 
@@ -84,7 +93,7 @@ const Contacto = () => {
                 </form>
 
                 {mensajeEnviado && formData && (
-                    <div className="popup" style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--text-light)' }}>
+                    <div className="popup">
                         <div className="popup-content">
                             <h2>Información Enviada</h2>
                             <p><strong>Nombre:</strong> {formData.nombre}</p>

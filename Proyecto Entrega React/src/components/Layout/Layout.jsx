@@ -8,7 +8,9 @@ const Layout = (props) => {
     return (
         <>
             <header>
+            <Link to="/">
                 <img className="imgHeader" src="Fav Icon.jpeg" alt="Logo" />
+            </Link>
                 <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
                     ☰
                 </button>
