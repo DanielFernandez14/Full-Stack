@@ -51,7 +51,7 @@ const Contacto = () => {
                     <input type="hidden" name="_next" value="https://tu-sitio.com/gracias" />
                     <input type="hidden" name="_captcha" value="false" />
 
-                    <label htmlFor="nombre">Nombre:</label>
+                    <label htmlFor="nombre">Nombre y Apellido:</label>
                     <input 
                         type="text" 
                         id="nombre" 
@@ -98,14 +98,14 @@ const Contacto = () => {
                         required
                     ></textarea>
 
-                    <button type="submit" className="btn-enviar">Enviar</button>
+                    <button type="submit" className="btn-enviar"> <i class='bx bx-mail-send bx-tada' ></i> Enviar</button>
                 </form>
 
                 {mensajeEnviado && formData && (
                     <div className="popup">
                         <div className="popup-content">
                             <h2>Información Enviada</h2>
-                            <p><strong>Nombre:</strong> {formData.nombre}</p>
+                            <p><strong>Nombre y Apellido:</strong> {formData.nombre}</p>
                             <p><strong>Email:</strong> {formData.email}</p>
                             <p><strong>Consulta:</strong> {formData.consulta}</p>
                             <p><strong>Mensaje:</strong> {formData.mensaje}</p>

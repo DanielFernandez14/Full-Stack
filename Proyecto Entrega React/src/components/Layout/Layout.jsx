@@ -16,19 +16,19 @@ const Layout = (props) => {
                 </button>
                 <nav className={menuOpen ? "nav-open" : ""}>
                     <ul>
-                        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-                        <li><Link to="/ApiTest" onClick={() => setMenuOpen(false)}>ApiTest</Link></li>
-                        <li><Link to="/Contacto" onClick={() => setMenuOpen(false)}>Contacto</Link></li>
+                        <li><Link to="/" onClick={() => setMenuOpen(false)}><i class='bx bx-home bx-tada' ></i> - Home</Link></li>
+                        <li><Link to="/ApiTest" onClick={() => setMenuOpen(false)}> <i class='bx bx-test-tube bx-tada' ></i> - ApiTest RyM</Link></li>
+                        <li><Link to="/Contacto" onClick={() => setMenuOpen(false)}> <i class='bx bxs-contact bx-tada' ></i> - Contacto</Link></li>
                     </ul>
                 </nav>
             </header>
             <main>{props.children}</main>
             <footer className="footer_class">
-                <p>© 2025 - Sitio desarrollado por Daniel Fernández</p>
+                <p>© 2025 - Sitio desarrollado por Daniel Matias Fernández</p>
                 <div className="footer_links">
-                    <a href="https://github.com/DanielFernandez14" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <Link to="/Contacto">Contacto</Link>
+                    <a href="https://github.com/DanielFernandez14" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github bx-tada' ></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin bx-tada' ></i> LinkedIn</a>
+                    <Link to="/Contacto"><i class='bx bxs-contact bx-tada' ></i> Contacto</Link>
                 </div>
             </footer>
         </>
