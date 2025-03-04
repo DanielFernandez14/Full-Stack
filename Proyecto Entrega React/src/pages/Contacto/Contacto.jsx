@@ -41,7 +41,7 @@ const Contacto = () => {
                         Te contactamos lo antes posible
                     </div>
                 )}
-
+                <form action="https://formsubmit.co/daniel.mfernandez1999@gmail.com" method="POST" />
                 <form className="contacto-form" onSubmit={handleSubmit}>
                     <label htmlFor="nombre">Nombre:</label>
                     <input 
