@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Layout } from "../../components/Layout/Layout";
-import "./RyMAleatorio.css";
+import "./ApiTest.css";
 
-const RyMAleatorio = () => {
+const ApiTest = () => {
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
@@ -36,4 +36,4 @@ const RyMAleatorio = () => {
     );
 };
 
-export { RyMAleatorio };
+export { ApiTest };

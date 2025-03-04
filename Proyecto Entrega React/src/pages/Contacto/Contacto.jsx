@@ -20,13 +20,12 @@ const Contacto = () => {
         setConsulta("");
         setMensaje("");
 
-        setTimeout(() => setMensajeEnviado(false), 4000);
     };
 
     return (
         <Layout>
             <div className="contacto-container">
-                <h1 className="contacto-titulo">Contáctanos</h1>
+                <h1 className="contacto-titulo">Contactanos</h1>
 
                 {mensajeEnviado && (
                     <div className="mensaje-exito">
