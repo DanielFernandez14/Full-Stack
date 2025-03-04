@@ -17,6 +17,8 @@ body {
     text-align: center;
     color: var(--text-bright);
     margin-bottom: 20px;
+    padding: 30px;
+    
 }
 
 .grid-container {
@@ -25,6 +27,18 @@ body {
     gap: 20px;
     padding: 20px;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .card {
@@ -42,18 +56,19 @@ body {
 }
 
 .image {
-    width: 200px;
-    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 16px;
 }
 
 .name {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--text-bright);
 }
 
 .status, .species {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-light);
 }

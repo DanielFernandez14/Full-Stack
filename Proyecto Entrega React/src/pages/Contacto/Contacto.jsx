@@ -41,8 +41,16 @@ const Contacto = () => {
                         Te contactamos lo antes posible
                     </div>
                 )}
-                <form action="https://formsubmit.co/daniel.mfernandez1999@gmail.com" method="POST" />
-                <form className="contacto-form" onSubmit={handleSubmit}>
+                
+                <form 
+                    className="contacto-form" 
+                    onSubmit={handleSubmit} 
+                    action="https://formsubmit.co/daniel.mfernandez1999@gmail.com" 
+                    method="POST"
+                >
+                    <input type="hidden" name="_next" value="https://tu-sitio.com/gracias" />
+                    <input type="hidden" name="_captcha" value="false" />
+
                     <label htmlFor="nombre">Nombre:</label>
                     <input 
                         type="text" 
@@ -66,6 +74,7 @@ const Contacto = () => {
                     <label htmlFor="consulta">Tipo de Consulta:</label>
                     <select 
                         id="consulta" 
+                        name="consulta"
                         value={consulta} 
                         onChange={(e) => setConsulta(e.target.value)} 
                         required
