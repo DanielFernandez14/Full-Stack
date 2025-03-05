@@ -45,7 +45,7 @@ const Contacto = () => {
                 <form 
                     className="contacto-form" 
                     onSubmit={handleSubmit} 
-                    action="425f0c6e78697748eef68aabe5b72925" 
+                    action="https://formsubmit.co/daniel.mfernandez1999" 
                     method="POST"
                 >
                     <input type="hidden" name="_next" value="" />
@@ -55,7 +55,7 @@ const Contacto = () => {
                     <input 
                         type="text" 
                         id="nombre" 
-                        name="nombre" 
+                        name="message" 
                         value={nombre} 
                         onChange={(e) => setNombre(e.target.value)} 
                         required 
@@ -79,7 +79,7 @@ const Contacto = () => {
                         onChange={(e) => setConsulta(e.target.value)} 
                         required
                     >
-                        <option value="">...</option>
+                        <option value="">Elija una opción</option>
                         <option value="sitio-web">Sitio Web</option>
                         <option value="landing-page">Landing Page</option>
                         <option value="portfolio">Porfolio Web Profesional</option>
