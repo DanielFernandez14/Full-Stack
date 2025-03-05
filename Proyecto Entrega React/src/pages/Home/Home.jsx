@@ -7,6 +7,14 @@ const Home = () => (
         <h1 className="home__title"><i className='bx bxs-component'></i> - Danco Web Service:  Transformando tus ideas en realidad digital - <i className='bx bxs-component'></i></h1>
         <p className="home__intro">Danco Web Service, una pequeña pero apasionada empresa dedicada al <strong>desarrollo web</strong>. Desde la creación de atractivas <strong>páginas web</strong> hasta la implementación de completas <strong>tiendas en línea (e-commerce)</strong>, nuestro objetivo es llevar tus proyectos digitales al siguiente nivel.</p>
 
+        <div className="home__gallery">
+            <div className="gallery__container">
+                <img src="danco1.jpg" alt="Img-programacion" className="gallery__image" />
+                <img src="danco2.jpg" alt="Img-programacion" className="gallery__image" />
+                <img src="danco3.jpg" alt="Img-programacion" className="gallery__image" />
+            </div>
+        </div>
+
         <div className="home__grid">
         <section className="home__section">
         <h2 className="home__subtitle">¿Quiénes somos?<i className='bx bxl-stack-overflow bx-flashing' ></i></h2>
