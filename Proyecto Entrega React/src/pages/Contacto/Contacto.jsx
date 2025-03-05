@@ -45,10 +45,10 @@ const Contacto = () => {
                 <form 
                     className="contacto-form" 
                     onSubmit={handleSubmit} 
-                    action="https://formsubmit.co/daniel.mfernandez1999@gmail.com" 
+                    action="425f0c6e78697748eef68aabe5b72925" 
                     method="POST"
                 >
-                    <input type="hidden" name="_next" value="https://tu-sitio.com/gracias" />
+                    <input type="hidden" name="_next" value="" />
                     <input type="hidden" name="_captcha" value="false" />
 
                     <label htmlFor="nombre">Nombre y Apellido:</label>
@@ -98,7 +98,7 @@ const Contacto = () => {
                         required
                     ></textarea>
 
-                    <button type="submit" className="btn-enviar"> <i class='bx bx-mail-send bx-tada' ></i> Enviar</button>
+                    <button type="submit" className="btn-enviar"> <i className='bx bx-mail-send bx-tada' ></i> Enviar</button>
                 </form>
 
                 {mensajeEnviado && formData && (
