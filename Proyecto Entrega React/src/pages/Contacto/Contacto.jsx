@@ -45,7 +45,7 @@ const Contacto = () => {
                 <form 
                     className="contacto-form" 
                     onSubmit={handleSubmit} 
-                    action="https://formsubmit.co/daniel.mfernandez1999" 
+                    action="https://formsubmit.co/daniel.mfernandez1999@gmail.com" 
                     method="POST"
                 >
                     <input type="hidden" name="_next" value="" />

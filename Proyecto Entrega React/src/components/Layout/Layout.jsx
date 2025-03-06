@@ -27,7 +27,7 @@ const Layout = (props) => {
                 <p>© 2025 - Sitio desarrollado por Daniel Matias Fernández</p>
                 <div className="footer_links">
                     <a href="https://github.com/DanielFernandez14" target="_blank" rel="noopener noreferrer"><i className='bx bxl-github bx-tada' ></i> GitHub</a>
-                    <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer"><i className='bx bxl-linkedin bx-tada' ></i> LinkedIn</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i className='bx bxl-linkedin bx-tada' ></i> LinkedIn</a>
                     <Link to="/Contacto"><i className='bx bxs-contact bx-tada' ></i> Contacto</Link>
                 </div>
             </footer>
